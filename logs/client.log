@@ -1,0 +1,322 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:urlshortener-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+C:\Program Files\Java\jdk1.8.0_271\bin\java -cp C:\Users\root\IdeaProjects\cloud-based-data-processing-url-shortener-client\urlshortener\conf;C:\Users\root\IdeaProjects\cloud-based-data-processing-url-shortener-client\urlshortener\target\urlshortener-binding-0.18.0-SNAPSHOT.jar;C:\Users\root\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.4\HdrHistogram-2.1.4.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\external\javax.inject\2.2.0\javax.inject-2.2.0.jar;C:\Users\root\.m2\repository\com\github\stefanbirkner\system-rules\1.16.0\system-rules-1.16.0.jar;C:\Users\root\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.4\jackson-core-asl-1.9.4.jar;C:\Users\root\.m2\repository\org\glassfish\jersey\core\jersey-server\2.6\jersey-server-2.6.jar;C:\Users\root\IdeaProjects\cloud-based-data-processing-url-shortener-client\core\target\core-0.18.0-SNAPSHOT.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\hk2-api\2.2.0\hk2-api-2.2.0.jar;C:\Users\root\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0\javax.ws.rs-api-2.0.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\hk2-locator\2.2.0\hk2-locator-2.2.0.jar;C:\Users\root\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.4.2\ecj-4.4.2.jar;C:\Users\root\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.4\jackson-mapper-asl-1.9.4.jar;C:\Users\root\.m2\repository\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.6\jersey-guava-2.6.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.2.0\aopalliance-repackaged-2.2.0.jar;C:\Users\root\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\root\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\root\.m2\repository\org\apache\htrace\htrace-core4\4.1.0-incubating\htrace-core4-4.1.0-incubating.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-log4j\8.0.28\tomcat-embed-logging-log4j-8.0.28.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.28\tomcat-embed-el-8.0.28.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.28\tomcat-embed-logging-juli-8.0.28.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.28\tomcat-embed-core-8.0.28.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;C:\Users\root\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\root\.m2\repository\org\glassfish\jersey\core\jersey-client\2.6\jersey-client-2.6.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.28\tomcat-embed-websocket-8.0.28.jar;C:\Users\root\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\root\.m2\repository\org\glassfish\hk2\hk2-utils\2.2.0\hk2-utils-2.2.0.jar;C:\Users\root\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\root\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\root\.m2\repository\org\apache\tomcat\tomcat-dbcp\8.0.28\tomcat-dbcp-8.0.28.jar;C:\Users\root\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\2.6\jersey-container-servlet-core-2.6.jar;C:\Users\root\.m2\repository\org\apache\tomcat\embed\tomcat-embed-jasper\8.0.28\tomcat-embed-jasper-8.0.28.jar;C:\Users\root\.m2\repository\org\glassfish\jersey\core\jersey-common\2.6\jersey-common-2.6.jar;C:\Users\root\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar site.ycsb.Client -db site.ycsb.urlshortener.URLShortenerClient -P workloads/workloadshortener -threads 2 -p servers=http://localhost:8090/,http://localhost:8091/,http://localhosCommand line: -db site.ycsb.urlshortener.URLShortenerClient -P workloads/workloadshortener -threads 2 -p servers=http://localhost:8090/,http://localhost:8091/,http://localhost:8092/ -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+Connecting to the following servers: http://localhost:8090/,http://localhost:8091/,http://localhost:8092/
+Connecting to the following servers: http://localhost:8090/,http://localhost:8091/,http://localhost:8092/
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:20 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:37 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:39 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:39 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8092: The target server failed to respond
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:42:40 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:43:03 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:44:35 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:44:35 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+Jan 13, 2021 2:44:35 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8092: Software caused connection abort: recv failed
+Jan 13, 2021 2:44:35 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {}->http://localhost:8092
+[OVERALL], RunTime(ms), 516825
+[OVERALL], Throughput(ops/sec), 39.08479659459198
+[TOTAL_GCS_PS_Scavenge], Count, 209
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 171
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.03308663474096647
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 209
+[TOTAL_GC_TIME], Time(ms), 171
+[TOTAL_GC_TIME_%], Time(%), 0.03308663474096647
+[READ], Operations, 19976
+[READ], AverageLatency(us), 26012.20829995995
+[READ], MinLatency(us), 498
+[READ], MaxLatency(us), 6848511
+[READ], 95thPercentileLatency(us), 11687
+[READ], 99thPercentileLatency(us), 1021951
+[READ], Return=OK, 19976
+[CLEANUP], Operations, 2
+[CLEANUP], AverageLatency(us), 1.0
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 2
+[CLEANUP], 95thPercentileLatency(us), 2
+[CLEANUP], 99thPercentileLatency(us), 2
+[INSERT], Operations, 224
+[INSERT], AverageLatency(us), 2283170.285714286
+[INSERT], MinLatency(us), 1928192
+[INSERT], MaxLatency(us), 10510335
+[INSERT], 95thPercentileLatency(us), 3201023
+[INSERT], 99thPercentileLatency(us), 4644863
+[INSERT], Return=OK, 224
